@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(31, 30, 30);
+}
+header{
+    background-color:  green;
+    padding: 1.5vw;
+    font-weight: bold;
+}
+header p{
+    margin-left: 10vw;
+    color: aliceblue;
+
+}
+#hero{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin:10vh 0px;
+}
+#profile img{
+    width: 25vw;
+    height: auto;
+}
+#heroText{
+    width: 30vw;
+    margin-right: 100px;
+}
+#nome{
+    font-size: 2vw;
+    color: green;
+}
+#profission{
+    font-size: 4vw;
+    text-align: right;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+#resumo{
+    text-align: justify;
+    margin: 20px 0;
+}
+
+.contratar{
+    padding: 10px 20px;
+    font-size: 1vw;
+    border: none;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 5px;
+}
+
