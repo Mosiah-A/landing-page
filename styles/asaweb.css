@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --font: 'Ubunto';
+    --font-cta: 'Bebas Neue';
+    --branco-gelo: #F5F3EE;
+    --preto-fundo: #0D0D0D;
+    --azul: #7EA2D5;
+    --luz: #4FA50B;
+    --sombra: #001B05;
+    --verde: #027226;
+
+}
+
+*{
+    font-family: var(--font), sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+h1{
+    font-size: 54px;
+}
+h2{
+    font-size: 36px;
+}
+p, span{
+    font-size: 18px;
+}
+body{
+    background-color: var(--branco-gelo);
+    
+}
+header{
+    background-color: var(--preto-fundo);
+
+}
+nav{
+    color: var(--branco-gelo);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 200px;
+    padding: 10px 00px;
+}
+#navList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+#navList li a{
+    text-decoration: none;
+    color: var(--branco-gelo);
+    font-size: 18px;
+    padding: 10px 55px;
+    font-family: var(--font-cta), sans-serif;
+
+   
+}
+#navList li a:hover, #navListfooter li a:hover{
+    background-color: var(--azul);
+    transition: background-color 1s;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.cta{
+    background-color: var(--luz);
+    border: none;
+    color: var(--branco-gelo);
+    padding: 10px 22px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    font-family: var(--font-cta), sans-serif;
+    font-size: 18px;
+}
+
+.cta:hover{
+    background-color: var(--verde);
+    cursor: pointer;
+    transition: background-color 0.5s;
+
+}
+
+#hero{
+    margin: 0 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#hero div{
+    width: 400px;
+
+}
+.subtitle{
+    font-family: var(--font);
+    font-style: italic;
+    font-weight: 100;
+}
+#hero p, #hero button{
+    margin-top: 20px;
+}
+
+#quemsomos{
+    display: grid;
+    margin: 0 200px;
+    justify-content: right;
+    grid-template-rows: 350px 250px;
+    grid-template-columns: 1fr 1fr
+}
+#boxquemsomos{
+    grid-row: 1;
+    grid-column: 2;
+
+}
+#quemsomos p{
+    margin-top: 20px;
+}
+#quemsomosgalery{
+    grid-row: 2;
+    grid-column: span 2;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: auto;
+
+}
+#quemsomosgalery div{
+    width: 350px;
+    
+}
+#quemsomos button{
+    grid-row: 3;
+    grid-column: span 2;
+    width: 200px;
+    margin: auto;
+
+}
+#servicos{
+    margin: 0 200px;
+
+}
+#servicos h2{
+    text-align: center;
+    margin-top: 150px;
+}
+#servicosGalery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#servicosGalery div{
+    width: 200px;
+    text-align: center;
+}
+#servicos img{
+    background-color: #001B05;
+    height: 400px;
+    width: 200px;
+    border-radius: 100px;
+    margin-top: 55px;
+}
+#cta{
+    margin: 100px auto;
+    width: 480px;
+    height: 100px;
+    text-align: center;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+}
+#duvidas{
+    margin: 200px 200px;
+    display: flex;
+    flex-direction: column;
+}
+#duvidas div{ 
+    padding: 25px;
+    background-color: rgba(128, 128, 128, 0.418);
+    border-radius: 20px;
+    margin-bottom: 44px;
+}
+#duvidas span{
+    font-weight: bold;
+}
+#formcta{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 400px;
+    gap: 25px;
+    text-align: center;
+    position: absolute;
+    right: 40%;
+
+}
+.triangulo-retangulo {
+    margin-top: -300px;
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 400px solid var(--verde);
+    
+}
+.bg{
+    width: 100vw;
+    height: 400px;
+    background-color: var(--verde);
+
+}
+
+#formcta h2 ,#formcta span{
+    background-color: rgb(249, 249, 249);
+    padding: 2% 5% ;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#formcta button:hover{
+    background-color: var(--sombra);
+
+}
+footer{
+    margin: 0 200px;
+    height: 100px;
+    text-align: center;
+}
+footer p{
+    margin-top: 44px;
+}
+#navListfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 40px;
+    list-style: none;
+    ;
+    
+}
+#navListfooter li a{
+    text-decoration: none;
+    color: var(--preto-fundo);
+    font-family: var(--font-cta);
+    padding: 10px 55px;
+    font-size: 18px;
+}
+.copyright{
+    font-weight: 100;
+    font-family: var(--font);
+    font-style: italic;
+    font-size: 16px;
+    padding-bottom: 44px;
+}
+
+
+@media (max-width:700px) {
+    #navList{
+        display: none;
+    }
+    nav{
+        height: 80px;
+        width: 100vw;
+        margin: 0;
+        align-items: center;
+    }
+    nav .cta{
+        width: 200px;
+        margin: 0 20px;
+    }
+    #hero{
+        flex-direction: column-reverse;
+    }
+    #hero img{
+        display: none;
+    }    
+    #hero div{
+        width: 90vw;
+        margin: 20px 0px;
+        padding-bottom:  100px ;
+        background-color: grey;
+        border-radius: 20px;
+        padding: 20px;
+    }    
+    p{
+        font-size: 16px;
+    }
+    #quemsomos{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0px;
+    }
+    #boxquemsomos{
+        width: 90vw;
+        margin: auto;
+    }
+    #quemsomosgalery{
+        margin-top: 44px;
+        flex-direction: column;
+        width: 90vw;
+        justify-content: center;
+    }
+    #quemsomos button{
+        margin: auto;
+        margin-top: 40px;
+    }
+    #servicos{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 100vw;
+    }
+    #servicosGalery{
+        margin-top: 0;
+        flex-direction: column;
+        margin: auto;
+    }
+    #cta{
+        width: 90vw;
+        height: 100%;
+    }
+    #duvidas{
+        margin-top: 0;
+        width: 90vw;
+        margin: auto;
+        margin-top: 0px;
+    }
+    .triangulo-retangulo{
+        display: none;
+    }
+    #formcta{
+        position: relative;
+        margin: auto;
+        right: 0;
+        top: 80px;
+        width: 90vw;
+    }
+    #formcta span{
+        font-size: 16px;
+    }
+    footer{
+        width: 100vw;
+        margin: auto;
+    }
+    #navListfooter{
+        width: 100vw;
+        display: block;
+        margin-top: 20px;
+        gap: 20px;
+
+    }
+    .copyright{
+        width: 100vw;
+        
+    }
+    
+}
